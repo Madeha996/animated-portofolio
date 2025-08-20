@@ -1,0 +1,40 @@
+@use "../../app.scss" as *;
+
+/* cursor.scss */
+
+body {
+  cursor: none;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none; // مهم حتى لا يعيق التفاعل مع العناصر
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .circle {
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+
+  .circle.small {
+    width: 6px;
+    height: 6px;
+    background-color: white; // لجعلها واضحة داخل الدائرة الكبيرة
+  }
+
+  .circle.large {
+    width: 20px;
+    height: 20px;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
