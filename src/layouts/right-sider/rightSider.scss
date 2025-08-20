@@ -1,0 +1,27 @@
+.right-sider {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 80px;
+  background: #111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      margin: 20px 0;
+      cursor: pointer;
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      &:hover {
+        color: #00f;
+      }
+    }
+  }
+}
