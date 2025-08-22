@@ -1,14 +1,14 @@
 import React from "react";
 import "./rightSider.scss";
+import { Link } from "react-router";
 
 const RightSider = () => {
   return (
     <div className="right-sider">
-      <ul>
-        <li>Portfolio</li>
-        <li>About Me</li>
-        <li>Contact</li>
-      </ul>
+      <Link to="/portoflio">PORTOFOLIO</Link>
+      <Link to="/services">SERVICES</Link>
+      <Link to="/about">ABOUT</Link>
+      <Link to="/contact">CONTACT</Link>
     </div>
   );
 };
