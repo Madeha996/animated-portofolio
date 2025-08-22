@@ -10,11 +10,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f5f5f5;
+    background: blue;
+    // background: #f5f5f5;
     z-index: 1;
   }
 
   .left-sider.open + .main-content {
-    margin-left: 200px;
+    // margin-left: 200px;
   }
 }

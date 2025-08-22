@@ -1,7 +1,11 @@
+import { Route, Routes } from "react-router";
 import "./app.scss";
 import Cursor from "./components/cursor/Cursor";
-import Hero from "./components/hero/Hero";
 import Layout from "./layouts/Layout";
+import Services from "./pages/services";
+import Contact from "./pages/contact";
+import About from "./pages/about";
+import Portoflio from "./pages/portofolio";
 
 const App = () => {
   return (
@@ -9,7 +13,12 @@ const App = () => {
       <Cursor />
       <section>
         <Layout>
-          <Hero />
+          <Routes>
+            <Route path="/services" element={<Services />} />
+            <Route path="/portoflio" element={<Portoflio />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
         </Layout>
       </section>
     </div>

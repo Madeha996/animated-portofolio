@@ -29,16 +29,16 @@
       }
 
       h2 {
-        font-size: 30px;
+        font-size: 1.2em;
         color: rebeccapurple;
         letter-spacing: 10px;
       }
 
       h1 {
-        font-size: 88px;
+        font-size: 4em;
 
         @include mobile {
-          font-size: 36px;
+          font-size: 3em;
         }
       }
 

@@ -10,18 +10,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    li {
-      margin: 20px 0;
-      cursor: pointer;
-      writing-mode: vertical-rl;
-      transform: rotate(180deg);
-      &:hover {
-        color: #00f;
-      }
+
+  a {
+    margin: 20px 0;
+    cursor: pointer;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    &:hover {
+      color: #00f;
     }
   }
 }
