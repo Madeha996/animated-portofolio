@@ -1,0 +1,18 @@
+.social-links {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  a {
+    color: rgba(255, 255, 255, 0.699);
+    font-size: 1.5em;
+    transition: transform 0.2s, color 0.2s;
+
+    &:hover {
+      color: #ebb85e; // يمكن تغييره حسب اللون المطلوب
+      transform: scale(1.2);
+    }
+  }
+}
