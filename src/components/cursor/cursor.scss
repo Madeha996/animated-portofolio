@@ -10,7 +10,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  pointer-events: none; // مهم حتى لا يعيق التفاعل مع العناصر
+  pointer-events: none;
   transform: translate(-50%, -50%);
   z-index: 9999;
   display: flex;
@@ -26,7 +26,7 @@ body {
   .circle.small {
     width: 6px;
     height: 6px;
-    background-color: white; // لجعلها واضحة داخل الدائرة الكبيرة
+    background-color: white;
   }
 
   .circle.large {
