@@ -27,7 +27,7 @@ const LeftSider = () => {
     <motion.div
       className={`left-sider ${!isOpen ? "collapsed" : "open"}`}
       animate={{ width: isOpen ? 424 : 81 }}
-      transition={{ type: "spring", stiffness: 200, damping: 25 }} // فتح أبطأ
+      transition={{ type: "spring", stiffness: 200, damping: 25 }}
     >
       {!isOpen && (
         <>
