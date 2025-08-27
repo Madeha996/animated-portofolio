@@ -11,8 +11,11 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
-
-  a {
+  ul {
+    list-style: none;
+    text-decoration: none;
+  }
+  li {
     margin: 20px 0;
     cursor: pointer;
     writing-mode: vertical-rl;
